@@ -1,8 +1,8 @@
-import classes from "../FullArticles/BigArticle.module.css";
 import Card from "../Layout/Card";
 import { MdRemoveCircle } from "react-icons/md";
 import { useDispatch } from "react-redux";
 import { uiActions } from "../store/ui-slice";
+import '../../style.css';
 
 const BigArticle = ({ title, body, id }) => {
 
@@ -14,16 +14,16 @@ const BigArticle = ({ title, body, id }) => {
 
   return (
     <Card>
-      <section className={classes.post}>
-        <div className={classes.title}>
-          <h1 className={classes.title__param}>{title}</h1>
+      <section className='post'>
+        <div className='title'>
+          <h1 className='title__param'>{title}</h1>
           <MdRemoveCircle
-              className={classes.title__remove}
+              className='title__remove'
               title="Remove from favourites"
               onClick={removeFavouriteHandler}
             />
         </div>
-        <article className={classes.post__body}>{body}</article>
+        <article className='post__body'>{body}</article>
       </section>
     </Card>
   );

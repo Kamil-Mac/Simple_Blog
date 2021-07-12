@@ -1,14 +1,15 @@
-import classes from "./ShortcutArticle.module.css";
 import { Link } from "react-router-dom";
+import '../../style.css';
+
 const ShortcutArticle = ({ title, id }) => {
   return (
     <>
-      <article className={classes.shortPost}>
-        <div className={classes.shortPost__title}>
-          <p className={classes.shortPost__description}>{title}</p>
+      <article className="shortPost">
+        <div className="shortPost__title">
+          <p className="shortPost__description">{title}</p>
         </div>
         <Link to={`posts/${id}`}>
-          <button className={classes.shortPost__readMoreButton}>Read More</button>
+          <button className="button button--readMore">Read More</button>
         </Link>
       </article>
     </>

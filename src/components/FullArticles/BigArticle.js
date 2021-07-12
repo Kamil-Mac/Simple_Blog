@@ -1,4 +1,3 @@
-import classes from "./BigArticle.module.css";
 import CommentSection from "./CommentSection";
 import { AiFillHeart } from "react-icons/ai";
 import Card from "../Layout/Card";
@@ -8,6 +7,7 @@ import { useEffect, useState } from "react";
 import { fetchCommentData } from "../store/post-actions";
 import { MdRemoveCircle } from 'react-icons/md';
 import { uiActions } from "../store/ui-slice";
+import '../../style.css';
 
 const BigArticle = () => {
 
@@ -58,19 +58,19 @@ const BigArticle = () => {
   return (
     <>
       <Card>
-        <section className={classes.post}>
-          <div className={classes.title}>
-            <h1 className={classes.title__param}>{currentPost[0].title}</h1>
+        <section className='post'>
+          <div className='title'>
+            <h1 className='title__param'>{currentPost[0].title}</h1>
             <span>
-              <AiFillHeart className={classes.title__add} title="Add to favourites" onClick={addToFavouriteHandler}/>
-              <MdRemoveCircle className={classes.title__remove} title="Remove from favourites" onClick={removeFavouriteHandler} />
+              <AiFillHeart className='title__add' title="Add to favourites" onClick={addToFavouriteHandler}/>
+              <MdRemoveCircle className='title__remove' title="Remove from favourites" onClick={removeFavouriteHandler} />
             </span>
           </div>
-          <article className={classes.post__body}>
+          <article className='post__body'>
             {currentPost[0].body}
           </article>
         </section>
-        <button className={classes.btnShow} onClick={showCommentsHandler}>{message}</button>
+        <button className='button button--showComments' onClick={showCommentsHandler}>{message}</button>
       </Card>
       
       {isOpen && commentsShow.map((comment) => (

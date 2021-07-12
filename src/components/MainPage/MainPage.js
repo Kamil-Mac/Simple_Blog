@@ -1,6 +1,6 @@
 import ShortcutArticle from "./ShortcutArticle";
-import classes from "./MainPage.module.css";
 import { useSelector } from "react-redux";
+import '../../style.css';
 
 const MainPage = () => {
   
@@ -8,9 +8,9 @@ const MainPage = () => {
   const postsParams = [...postsShow.posts];
 
   return (
-    <section className={classes.mainContainer}>
-      <h1 className={classes.mainContainer__title}>Articles</h1>
-      <div className={classes.mainContainer__posts}>
+    <section className="mainContainer">
+      <h1 className="mainContainer__title">Articles</h1>
+      <div className="mainContainer__posts">
         {postsParams.map((post) => (
           <ShortcutArticle title={post.title} key={post.id} id={post.id} />
         ))}
