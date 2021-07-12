@@ -1,0 +1,9 @@
+.mainContainer {
+  text-align: center;
+}
+
+.mainContainer h2 {
+    font-size: 2rem;
+    color: #0887ff;
+    text-transform: uppercase;
+  }

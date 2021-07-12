@@ -1,0 +1,63 @@
+.post {
+  padding: 15px;
+}
+
+.title__param {
+  color: #0887ff;
+  font-size: 1.5rem;
+  margin-top: 0;
+}
+
+.post__body {
+  text-align: justify;
+}
+
+.title {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.title__add {
+  vertical-align: middle;
+  height: auto;
+  width: 2.2rem;
+  margin-left: auto;
+  color: #fcfc9388;
+}
+
+.title__add:hover {
+  color: yellow;
+}
+
+.title__remove {
+  vertical-align: middle;
+  height: auto;
+  width: 2.2rem;
+  margin-left: auto;
+  color: #f82f2f88;
+}
+
+.title__remove:hover {
+  color: red;
+}
+
+.btnShow {
+  background-color: transparent;
+  border-radius: 3px;
+  border: 1px solid #0b0e07;
+  margin-bottom: 10px;
+  cursor: pointer;
+  color: #000000;
+  font-size: 15px;
+  padding: 9px 23px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #263666;
+}
+.btnShow:hover {
+  background-color: transparent;
+}
+.btnShow:active {
+  position: relative;
+  top: 1px;
+}

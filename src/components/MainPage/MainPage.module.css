@@ -1,0 +1,23 @@
+.mainContainer {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    border-left: 1px dashed rgba(15, 103, 161, 0.28);
+    border-radius: 0px 0px 30px 30px;;
+    border-right: 1px dashed rgba(15, 103, 161, 0.28);
+}
+
+.mainContainer__title {
+    color: #0887ff;
+    font-size: 4rem;
+    margin-top: 0;
+    text-transform: uppercase;
+}
+
+.mainContainer__posts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}

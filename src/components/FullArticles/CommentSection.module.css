@@ -1,0 +1,75 @@
+.comment {
+    background-color: #c7eef7;
+    width: 100%;
+}
+
+.comment__add {
+    vertical-align: middle;
+    color: #fcfc9388;
+    height: auto;
+    width: 2.2rem;
+    margin-left: auto;
+}
+
+.comment__add:hover {
+    color: yellow;
+}
+
+.comment__remove {
+    vertical-align: middle;
+    height: auto;
+    width: 2.2rem;
+    margin-left: auto;
+    color: #f82f2f88;
+  }
+  
+.comment__remove:hover {
+    color: red;
+}
+
+.comment__person {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.comment__body {
+    text-align: justify;
+    margin: 20px;
+}
+
+.person {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.person__name{
+    text-transform: uppercase;
+}
+
+.person__icon {
+    vertical-align: middle;
+    color: darkgray;
+    height: auto;
+    width: 2.7rem;
+}
+
+.comment__email {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 20px;
+}
+
+.email {
+    text-align: left;
+    color: darkgray;
+}
+
+.email__icon {
+    vertical-align: middle;
+    height: auto;
+    width: 1.7rem;
+}
